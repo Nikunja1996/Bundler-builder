@@ -1,4 +1,4 @@
-name: Simple Bundlebuilder CI/CD
+name: Simple To-Do List CI/CD
 
 on:
   push:
@@ -6,7 +6,7 @@ on:
 
 jobs:
   deploy:
-    runs-on: ubuntu-lates
+    runs-on: ubuntu-latest
     
     steps:
     - name: Checkout code
@@ -23,3 +23,4 @@ jobs:
       with:
         personal_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./
+
